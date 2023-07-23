@@ -60,6 +60,12 @@ const SearchInput: React.FC<Props> = ({
           value={search}
           onFocus={onFocus}
           autoCorrect={false}
+          returnKeyType={'search'}
+          onSubmitEditing={() => {
+            if (search.length > 3) {
+              onSearch && onSearch(search);
+            }
+          }}
           placeholder={placeholder}
           onChangeText={searchValue => handleSearch(searchValue)}
         />
