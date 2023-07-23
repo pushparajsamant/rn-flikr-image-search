@@ -54,7 +54,6 @@ const Search = createSlice({
     },
     getNextItems: (state, action) => {
       const joinedPhotos = [...state.photo, ...action.payload.photo];
-      console.log(joinedPhotos.length);
       return {
         ...state,
         ...action.payload,
@@ -70,7 +69,6 @@ const Search = createSlice({
       return {...initialState, ...{oldSearches: state.oldSearches}};
     },
     errored: (state, action) => {
-      console.log(action.payload);
       return {...state, ...{error: action.payload}};
     },
     deleteSearchItem: (state, action) => {

@@ -50,7 +50,9 @@ exports[`Search Input Component renders correctly with close and submit button 1
     <TextInput
       autoCorrect={false}
       onChangeText={[Function]}
+      onSubmitEditing={[Function]}
       placeholder="Search"
+      returnKeyType="search"
       style={
         {
           "flex": 1,
@@ -177,7 +179,9 @@ exports[`Search Input Component renders correctly with placeholder 1`] = `
     <TextInput
       autoCorrect={false}
       onChangeText={[Function]}
+      onSubmitEditing={[Function]}
       placeholder="Search Text"
+      returnKeyType="search"
       style={
         {
           "flex": 1,
@@ -245,7 +249,9 @@ exports[`Search Input Component renders correctly without close and submit butto
     <TextInput
       autoCorrect={false}
       onChangeText={[Function]}
+      onSubmitEditing={[Function]}
       placeholder="Search"
+      returnKeyType="search"
       style={
         {
           "flex": 1,
