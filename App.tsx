@@ -16,7 +16,6 @@ import 'react-native-gesture-handler';
 import MainNavigation from './navigation/MainNavigation';
 
 function App(): React.JSX.Element {
-  console.log(Config);
   const isDarkMode = useColorScheme() === 'dark';
   //const dispatch = useAppDispatch();
   const backgroundStyle = {
