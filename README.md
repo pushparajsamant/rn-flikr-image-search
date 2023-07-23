@@ -4,6 +4,16 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
+```bash
+Environment on my machine
+
+Make: Apple Macbook Pro
+OS: Ventura
+Node: v18.16.1
+React-Native CLI: 11.3.5
+````
+
+
 ## Step 1: Install the packages
 
 First, you will need to install all the dependencies
