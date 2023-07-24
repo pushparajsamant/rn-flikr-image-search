@@ -293,34 +293,74 @@ exports[`HomeScreen renders correctly with data from Redux 1`] = `
             }
           }
         >
-          <Image
-            source={
-              {
-                "uri": "https://farm66.static.flickr.com/65535/52708477344_e883e24554.jpg",
-              }
-            }
+          <View
             style={
-              {
-                "height": 100,
-                "margin": 8.571428571428571,
-                "width": "48%",
-              }
+              [
+                {
+                  "overflow": "hidden",
+                },
+                {
+                  "height": 100,
+                  "margin": 1,
+                  "width": "50%",
+                },
+              ]
             }
-          />
-          <Image
-            source={
-              {
-                "uri": "https://farm66.static.flickr.com/65535/52708707438_0e034643f9.jpg",
+          >
+            <FastImageView
+              defaultSource={null}
+              resizeMode="cover"
+              source={
+                {
+                  "priority": "normal",
+                  "uri": "https://farm66.static.flickr.com/65535/52708477344_e883e24554.jpg",
+                }
               }
-            }
+              style={
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            />
+          </View>
+          <View
             style={
-              {
-                "height": 100,
-                "margin": 8.571428571428571,
-                "width": "48%",
-              }
+              [
+                {
+                  "overflow": "hidden",
+                },
+                {
+                  "height": 100,
+                  "margin": 1,
+                  "width": "50%",
+                },
+              ]
             }
-          />
+          >
+            <FastImageView
+              defaultSource={null}
+              resizeMode="cover"
+              source={
+                {
+                  "priority": "normal",
+                  "uri": "https://farm66.static.flickr.com/65535/52708707438_0e034643f9.jpg",
+                }
+              }
+              style={
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            />
+          </View>
         </View>
       </View>
       <View
@@ -335,34 +375,74 @@ exports[`HomeScreen renders correctly with data from Redux 1`] = `
             }
           }
         >
-          <Image
-            source={
-              {
-                "uri": "https://farm66.static.flickr.com/65535/52707700162_2772dd9ea6.jpg",
-              }
-            }
+          <View
             style={
-              {
-                "height": 100,
-                "margin": 8.571428571428571,
-                "width": "48%",
-              }
+              [
+                {
+                  "overflow": "hidden",
+                },
+                {
+                  "height": 100,
+                  "margin": 1,
+                  "width": "50%",
+                },
+              ]
             }
-          />
-          <Image
-            source={
-              {
-                "uri": "https://farm66.static.flickr.com/65535/52708477294_252cbca428.jpg",
+          >
+            <FastImageView
+              defaultSource={null}
+              resizeMode="cover"
+              source={
+                {
+                  "priority": "normal",
+                  "uri": "https://farm66.static.flickr.com/65535/52707700162_2772dd9ea6.jpg",
+                }
               }
-            }
+              style={
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            />
+          </View>
+          <View
             style={
-              {
-                "height": 100,
-                "margin": 8.571428571428571,
-                "width": "48%",
-              }
+              [
+                {
+                  "overflow": "hidden",
+                },
+                {
+                  "height": 100,
+                  "margin": 1,
+                  "width": "50%",
+                },
+              ]
             }
-          />
+          >
+            <FastImageView
+              defaultSource={null}
+              resizeMode="cover"
+              source={
+                {
+                  "priority": "normal",
+                  "uri": "https://farm66.static.flickr.com/65535/52708477294_252cbca428.jpg",
+                }
+              }
+              style={
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            />
+          </View>
         </View>
       </View>
       <View
@@ -377,34 +457,74 @@ exports[`HomeScreen renders correctly with data from Redux 1`] = `
             }
           }
         >
-          <Image
-            source={
-              {
-                "uri": "https://farm66.static.flickr.com/65535/52708635975_cc17ab1e00.jpg",
-              }
-            }
+          <View
             style={
-              {
-                "height": 100,
-                "margin": 8.571428571428571,
-                "width": "48%",
-              }
+              [
+                {
+                  "overflow": "hidden",
+                },
+                {
+                  "height": 100,
+                  "margin": 1,
+                  "width": "50%",
+                },
+              ]
             }
-          />
-          <Image
-            source={
-              {
-                "uri": "https://farm66.static.flickr.com/65535/52708477239_8a4c427f3b.jpg",
+          >
+            <FastImageView
+              defaultSource={null}
+              resizeMode="cover"
+              source={
+                {
+                  "priority": "normal",
+                  "uri": "https://farm66.static.flickr.com/65535/52708635975_cc17ab1e00.jpg",
+                }
               }
-            }
+              style={
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            />
+          </View>
+          <View
             style={
-              {
-                "height": 100,
-                "margin": 8.571428571428571,
-                "width": "48%",
-              }
+              [
+                {
+                  "overflow": "hidden",
+                },
+                {
+                  "height": 100,
+                  "margin": 1,
+                  "width": "50%",
+                },
+              ]
             }
-          />
+          >
+            <FastImageView
+              defaultSource={null}
+              resizeMode="cover"
+              source={
+                {
+                  "priority": "normal",
+                  "uri": "https://farm66.static.flickr.com/65535/52708477239_8a4c427f3b.jpg",
+                }
+              }
+              style={
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            />
+          </View>
         </View>
       </View>
       <View
@@ -419,34 +539,74 @@ exports[`HomeScreen renders correctly with data from Redux 1`] = `
             }
           }
         >
-          <Image
-            source={
-              {
-                "uri": "https://farm66.static.flickr.com/65535/52708635885_9fb75886fe.jpg",
-              }
-            }
+          <View
             style={
-              {
-                "height": 100,
-                "margin": 8.571428571428571,
-                "width": "48%",
-              }
+              [
+                {
+                  "overflow": "hidden",
+                },
+                {
+                  "height": 100,
+                  "margin": 1,
+                  "width": "50%",
+                },
+              ]
             }
-          />
-          <Image
-            source={
-              {
-                "uri": "https://farm66.static.flickr.com/65535/52708707258_7f50bcf173.jpg",
+          >
+            <FastImageView
+              defaultSource={null}
+              resizeMode="cover"
+              source={
+                {
+                  "priority": "normal",
+                  "uri": "https://farm66.static.flickr.com/65535/52708635885_9fb75886fe.jpg",
+                }
               }
-            }
+              style={
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            />
+          </View>
+          <View
             style={
-              {
-                "height": 100,
-                "margin": 8.571428571428571,
-                "width": "48%",
-              }
+              [
+                {
+                  "overflow": "hidden",
+                },
+                {
+                  "height": 100,
+                  "margin": 1,
+                  "width": "50%",
+                },
+              ]
             }
-          />
+          >
+            <FastImageView
+              defaultSource={null}
+              resizeMode="cover"
+              source={
+                {
+                  "priority": "normal",
+                  "uri": "https://farm66.static.flickr.com/65535/52708707258_7f50bcf173.jpg",
+                }
+              }
+              style={
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            />
+          </View>
         </View>
       </View>
       <View
@@ -461,34 +621,74 @@ exports[`HomeScreen renders correctly with data from Redux 1`] = `
             }
           }
         >
-          <Image
-            source={
-              {
-                "uri": "https://farm66.static.flickr.com/65535/52708221451_254355b453.jpg",
-              }
-            }
+          <View
             style={
-              {
-                "height": 100,
-                "margin": 8.571428571428571,
-                "width": "48%",
-              }
+              [
+                {
+                  "overflow": "hidden",
+                },
+                {
+                  "height": 100,
+                  "margin": 1,
+                  "width": "50%",
+                },
+              ]
             }
-          />
-          <Image
-            source={
-              {
-                "uri": "https://farm66.static.flickr.com/65535/52708221406_fde6d3c379.jpg",
+          >
+            <FastImageView
+              defaultSource={null}
+              resizeMode="cover"
+              source={
+                {
+                  "priority": "normal",
+                  "uri": "https://farm66.static.flickr.com/65535/52708221451_254355b453.jpg",
+                }
               }
-            }
+              style={
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            />
+          </View>
+          <View
             style={
-              {
-                "height": 100,
-                "margin": 8.571428571428571,
-                "width": "48%",
-              }
+              [
+                {
+                  "overflow": "hidden",
+                },
+                {
+                  "height": 100,
+                  "margin": 1,
+                  "width": "50%",
+                },
+              ]
             }
-          />
+          >
+            <FastImageView
+              defaultSource={null}
+              resizeMode="cover"
+              source={
+                {
+                  "priority": "normal",
+                  "uri": "https://farm66.static.flickr.com/65535/52708221406_fde6d3c379.jpg",
+                }
+              }
+              style={
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            />
+          </View>
         </View>
       </View>
       <View
@@ -503,34 +703,74 @@ exports[`HomeScreen renders correctly with data from Redux 1`] = `
             }
           }
         >
-          <Image
-            source={
-              {
-                "uri": "https://farm66.static.flickr.com/65535/52708635745_5eaa3d1741.jpg",
-              }
-            }
+          <View
             style={
-              {
-                "height": 100,
-                "margin": 8.571428571428571,
-                "width": "48%",
-              }
+              [
+                {
+                  "overflow": "hidden",
+                },
+                {
+                  "height": 100,
+                  "margin": 1,
+                  "width": "50%",
+                },
+              ]
             }
-          />
-          <Image
-            source={
-              {
-                "uri": "https://farm66.static.flickr.com/65535/52708477069_06ce4163fb.jpg",
+          >
+            <FastImageView
+              defaultSource={null}
+              resizeMode="cover"
+              source={
+                {
+                  "priority": "normal",
+                  "uri": "https://farm66.static.flickr.com/65535/52708635745_5eaa3d1741.jpg",
+                }
               }
-            }
+              style={
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            />
+          </View>
+          <View
             style={
-              {
-                "height": 100,
-                "margin": 8.571428571428571,
-                "width": "48%",
-              }
+              [
+                {
+                  "overflow": "hidden",
+                },
+                {
+                  "height": 100,
+                  "margin": 1,
+                  "width": "50%",
+                },
+              ]
             }
-          />
+          >
+            <FastImageView
+              defaultSource={null}
+              resizeMode="cover"
+              source={
+                {
+                  "priority": "normal",
+                  "uri": "https://farm66.static.flickr.com/65535/52708477069_06ce4163fb.jpg",
+                }
+              }
+              style={
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            />
+          </View>
         </View>
       </View>
       <View
@@ -545,34 +785,74 @@ exports[`HomeScreen renders correctly with data from Redux 1`] = `
             }
           }
         >
-          <Image
-            source={
-              {
-                "uri": "https://farm66.static.flickr.com/65535/52708477039_8c95d685d2.jpg",
-              }
-            }
+          <View
             style={
-              {
-                "height": 100,
-                "margin": 8.571428571428571,
-                "width": "48%",
-              }
+              [
+                {
+                  "overflow": "hidden",
+                },
+                {
+                  "height": 100,
+                  "margin": 1,
+                  "width": "50%",
+                },
+              ]
             }
-          />
-          <Image
-            source={
-              {
-                "uri": "https://farm66.static.flickr.com/65535/52708635670_8630771f26.jpg",
+          >
+            <FastImageView
+              defaultSource={null}
+              resizeMode="cover"
+              source={
+                {
+                  "priority": "normal",
+                  "uri": "https://farm66.static.flickr.com/65535/52708477039_8c95d685d2.jpg",
+                }
               }
-            }
+              style={
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            />
+          </View>
+          <View
             style={
-              {
-                "height": 100,
-                "margin": 8.571428571428571,
-                "width": "48%",
-              }
+              [
+                {
+                  "overflow": "hidden",
+                },
+                {
+                  "height": 100,
+                  "margin": 1,
+                  "width": "50%",
+                },
+              ]
             }
-          />
+          >
+            <FastImageView
+              defaultSource={null}
+              resizeMode="cover"
+              source={
+                {
+                  "priority": "normal",
+                  "uri": "https://farm66.static.flickr.com/65535/52708635670_8630771f26.jpg",
+                }
+              }
+              style={
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            />
+          </View>
         </View>
       </View>
       <View
@@ -587,34 +867,74 @@ exports[`HomeScreen renders correctly with data from Redux 1`] = `
             }
           }
         >
-          <Image
-            source={
-              {
-                "uri": "https://farm66.static.flickr.com/65535/52707699647_3355106abf.jpg",
-              }
-            }
+          <View
             style={
-              {
-                "height": 100,
-                "margin": 8.571428571428571,
-                "width": "48%",
-              }
+              [
+                {
+                  "overflow": "hidden",
+                },
+                {
+                  "height": 100,
+                  "margin": 1,
+                  "width": "50%",
+                },
+              ]
             }
-          />
-          <Image
-            source={
-              {
-                "uri": "https://farm66.static.flickr.com/65535/52708635485_bee7f0fd19.jpg",
+          >
+            <FastImageView
+              defaultSource={null}
+              resizeMode="cover"
+              source={
+                {
+                  "priority": "normal",
+                  "uri": "https://farm66.static.flickr.com/65535/52707699647_3355106abf.jpg",
+                }
               }
-            }
+              style={
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            />
+          </View>
+          <View
             style={
-              {
-                "height": 100,
-                "margin": 8.571428571428571,
-                "width": "48%",
-              }
+              [
+                {
+                  "overflow": "hidden",
+                },
+                {
+                  "height": 100,
+                  "margin": 1,
+                  "width": "50%",
+                },
+              ]
             }
-          />
+          >
+            <FastImageView
+              defaultSource={null}
+              resizeMode="cover"
+              source={
+                {
+                  "priority": "normal",
+                  "uri": "https://farm66.static.flickr.com/65535/52708635485_bee7f0fd19.jpg",
+                }
+              }
+              style={
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            />
+          </View>
         </View>
       </View>
       <View
@@ -629,20 +949,40 @@ exports[`HomeScreen renders correctly with data from Redux 1`] = `
             }
           }
         >
-          <Image
-            source={
-              {
-                "uri": "https://farm66.static.flickr.com/65535/52708221041_65c386332b.jpg",
-              }
-            }
+          <View
             style={
-              {
-                "height": 100,
-                "margin": 8.571428571428571,
-                "width": "48%",
-              }
+              [
+                {
+                  "overflow": "hidden",
+                },
+                {
+                  "height": 100,
+                  "margin": 1,
+                  "width": "50%",
+                },
+              ]
             }
-          />
+          >
+            <FastImageView
+              defaultSource={null}
+              resizeMode="cover"
+              source={
+                {
+                  "priority": "normal",
+                  "uri": "https://farm66.static.flickr.com/65535/52708221041_65c386332b.jpg",
+                }
+              }
+              style={
+                {
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                }
+              }
+            />
+          </View>
         </View>
       </View>
     </View>

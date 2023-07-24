@@ -1,19 +1,28 @@
 import React from 'react';
-import {Image, StyleSheet} from 'react-native';
-import {horizontalScale} from '../../assets/styles/scale';
+import {StyleSheet} from 'react-native';
+import FastImage from 'react-native-fast-image';
 import {ImageType} from '../../redux/types';
 interface Props {
   item: ImageType;
 }
 const Tile: React.FC<Props> = ({item}) => {
   const imageURI = `https://farm${item.farm}.static.flickr.com/${item.server}/${item.id}_${item.secret}.jpg`;
-  return <Image source={{uri: imageURI}} style={styles.image} />;
+  return (
+    <FastImage
+      style={styles.image}
+      source={{
+        uri: imageURI,
+        priority: FastImage.priority.normal,
+      }}
+      resizeMode={FastImage.resizeMode.cover}
+    />
+  );
 };
 export default Tile;
 const styles = StyleSheet.create({
   image: {
     height: 100,
-    width: '48%',
-    margin: horizontalScale(4),
+    width: '50%',
+    margin: 1,
   },
 });
