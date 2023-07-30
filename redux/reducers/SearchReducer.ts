@@ -1,6 +1,6 @@
-import {createSlice} from '@reduxjs/toolkit';
+import {createAsyncThunk, createSlice} from '@reduxjs/toolkit';
 import {searchFlikr} from '../../api/Search';
-import {ImageType, PhotosState} from '../types';
+import {PhotosState} from '../types';
 import {AppDispatch} from '../store';
 
 const initialState: PhotosState = {
@@ -8,63 +8,42 @@ const initialState: PhotosState = {
   pages: 0,
   perpage: 0,
   total: 0,
-  photo: {} as ImageType[],
+  photo: [],
   error: undefined,
   search: '',
-  oldSearches: {} as string[],
+  oldSearches: [],
 };
-
-export const searchFlickrAPI = async (
-  searchTerm: string,
-  dispatch: AppDispatch,
-  pageNumber: number,
-) => {
-  try {
-    const flikrData = await searchFlikr(searchTerm, pageNumber);
-    const {photos} = flikrData ?? {};
-    if (pageNumber > 1) {
-      // We are requesting the next page for load
-      dispatch(getNextItems(photos));
-    } else {
-      //We are requesting a new search
-      dispatch(searchNew({photoData: photos, search: searchTerm}));
-    }
-  } catch (e: any) {
-    //console.log(e.message);
-    dispatch(errored('Could not load data'));
-  }
-};
+// Async thunk for making the API call
+export const fetchData = createAsyncThunk(
+  'data/fetchData',
+  async (params: {searchTerm: string; pageNumber: number}) => {
+    return await searchFlikr(params.searchTerm, params.pageNumber);
+  },
+);
+// export const searchFlickrAPI = async (
+//   searchTerm: string,
+//   dispatch: AppDispatch,
+//   pageNumber: number,
+// ) => {
+//   try {
+//     const flikrData = await searchFlikr(searchTerm, pageNumber);
+//     const {photos} = flikrData ?? {};
+//     if (pageNumber > 1) {
+//       // We are requesting the next page for load
+//       dispatch(getNextItems(photos));
+//     } else {
+//       //We are requesting a new search
+//       dispatch(searchNew({photoData: photos, search: searchTerm}));
+//     }
+//   } catch (e: any) {
+//     //console.log(e.message);
+//     dispatch(errored('Could not load data'));
+//   }
+// };
 const Search = createSlice({
   name: 'SearchSlice',
   initialState: initialState,
   reducers: {
-    /*New Search was submitted so add new search term to history and updating the pictures to be shown in the list*/
-    searchNew: (state, action) => {
-      const joinedOldSearches = Array.isArray(state.oldSearches)
-        ? [...state.oldSearches, action.payload.search]
-        : [action.payload.search];
-      return {
-        ...state,
-        ...action.payload.photoData,
-        ...{
-          //The search text is used on 2 pages so updated in the state
-          search: action.payload.search,
-          // Using Set here to remove duplicates
-          oldSearches: [...new Set(joinedOldSearches)],
-        },
-        ...{error: ''},
-      };
-    },
-    /*Infinite load for the current searched term*/
-    getNextItems: (state, action) => {
-      const joinedPhotos = [...state.photo, ...action.payload.photo];
-      return {
-        ...state,
-        ...action.payload,
-        ...{photo: joinedPhotos},
-        ...{error: ''},
-      };
-    },
     /*Clears the state completely*/
     clearItems: () => initialState,
     /*Clear the search input which will clear the pictures from the HomeScreen*/
@@ -93,15 +72,30 @@ const Search = createSlice({
       };
     },
   },
+  extraReducers: builder => {
+    builder
+      .addCase(fetchData.pending, state => {})
+      .addCase(fetchData.fulfilled, (state, action) => {
+        const {page, photo, search} = action.payload.photos;
+        state.error = undefined;
+        if (page > 1) {
+          state.photo = [...state.photo, ...photo];
+          state.page = page;
+          state.search = search;
+        } else {
+          state.oldSearches = [...new Set([...state.oldSearches, search])];
+          state.photo = photo;
+          state.search = search;
+          state.page = page;
+          state.error = undefined;
+        }
+      })
+      .addCase(fetchData.rejected, (state, action) => {
+        state.error = 'Could not load data';
+      });
+  },
 });
 
-export const {
-  searchNew,
-  getNextItems,
-  clearSearchTerm,
-  clearItems,
-  errored,
-  deleteSearchItem,
-} = Search.actions;
+export const {clearSearchTerm, clearItems, deleteSearchItem} = Search.actions;
 
 export default Search.reducer;

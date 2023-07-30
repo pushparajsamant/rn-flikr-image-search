@@ -14,7 +14,7 @@ const Tile: React.FC<Props> = ({item}) => {
         uri: imageURI,
         priority: FastImage.priority.normal,
       }}
-      resizeMode={FastImage.resizeMode.cover}
+      resizeMode={FastImage.resizeMode.contain}
     />
   );
 };

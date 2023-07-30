@@ -80,6 +80,7 @@ const SearchInput: React.FC<Props> = ({
           style={styles.searchButton}
           onPress={() => {
             if (search.length > 3) {
+              console.log(search);
               onSearch && onSearch(search);
             }
           }}>

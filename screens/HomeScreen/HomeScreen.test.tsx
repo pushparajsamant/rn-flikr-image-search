@@ -227,11 +227,3 @@ test('HomeScreen renders correctly with data from Redux', () => {
 
   expect(tree).toMatchSnapshot();
 });
-
-test('HomeScreen renders correctly with error', () => {
-  const store = mockStore({someData: null});
-
-  const tree = renderer.create().toJSON();
-
-  //expect(tree).toMatchSnapshot();
-});

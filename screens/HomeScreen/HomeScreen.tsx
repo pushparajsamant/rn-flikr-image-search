@@ -1,5 +1,5 @@
 import React from 'react';
-import {searchFlickrAPI} from '../../redux/reducers/SearchReducer';
+import {fetchData, searchFlickrAPI} from '../../redux/reducers/SearchReducer';
 import {NavigationProp} from '@react-navigation/native';
 import {RootState, useAppDispatch} from '../../redux/store';
 import {FlatList, SafeAreaView, StyleSheet, Text, View} from 'react-native';
@@ -27,7 +27,7 @@ const HomeScreen: React.FC<Props> = ({navigation}) => {
       />
       {searchState.error !== '' && searchState.error !== undefined ? (
         <View style={styles.error}>
-          <Text>{'Error'}</Text>
+          <Text>{searchState.error}</Text>
         </View>
       ) : (
         <FlatList
@@ -36,13 +36,14 @@ const HomeScreen: React.FC<Props> = ({navigation}) => {
           numColumns={2}
           keyExtractor={(item, index) => item.id + index}
           renderItem={({item}) => <Tile item={item} />}
-          onEndReachedThreshold={0.5}
+          onEndReachedThreshold={0.1}
           //Calling reducer function here to trigger infinite loading
           onEndReached={async () => {
-            await searchFlickrAPI(
-              searchState.search,
-              dispatch,
-              searchState.page + 1,
+            dispatch(
+              fetchData({
+                searchTerm: searchState.search,
+                pageNumber: searchState.page + 1,
+              }),
             );
           }}
         />
