@@ -9,7 +9,7 @@ jest.mock('react-native-device-info', () => {
 jest.mock('@fortawesome/react-native-fontawesome', () => ({
   FontAwesomeIcon: '',
 }));
-test('Search Input Component renders correctly with close and submit button', () => {
+test('Search InputField Component renders correctly with close and submit button', () => {
   const tree = renderer
     .create(
       <SearchInput
@@ -22,7 +22,7 @@ test('Search Input Component renders correctly with close and submit button', ()
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
-test('Search Input Component renders correctly without close and submit button', () => {
+test('Search InputField Component renders correctly without close and submit button', () => {
   const tree = renderer
     .create(
       <SearchInput
@@ -35,7 +35,7 @@ test('Search Input Component renders correctly without close and submit button',
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
-test('Search Input Component renders correctly with placeholder', () => {
+test('Search InputField Component renders correctly with placeholder', () => {
   const tree = renderer
     .create(
       <SearchInput
