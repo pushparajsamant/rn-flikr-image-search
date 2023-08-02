@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "329398514558",
+    "project_id": "donations-application-push",
+    "storage_bucket": "donations-application-push.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329398514558:android:dcfe257b018b886d28b92f",
+        "android_client_info": {
+          "package_name": "com.donationsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "329398514558-gnn35ikq81dldr1b2f1gc1p4hh4dq9pr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz6qhxr1SGEv7cCl3XcCH0Vql02Tzy8xo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "329398514558-gnn35ikq81dldr1b2f1gc1p4hh4dq9pr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "329398514558-3nhqn8sk5t85tpngojqc1rucqcec11in.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.DonationsApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329398514558:android:50269e80e0c28dbd28b92f",
+        "android_client_info": {
+          "package_name": "com.reactnativeflikrsearch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "329398514558-da8sdd83oaslsih0ntesjca7qlghj08n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.reactnativeflikrsearch",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "329398514558-gnn35ikq81dldr1b2f1gc1p4hh4dq9pr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz6qhxr1SGEv7cCl3XcCH0Vql02Tzy8xo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "329398514558-gnn35ikq81dldr1b2f1gc1p4hh4dq9pr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "329398514558-3nhqn8sk5t85tpngojqc1rucqcec11in.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.DonationsApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -13,7 +13,7 @@ import store from './redux/store';
 import {Provider} from 'react-redux';
 import Config from 'react-native-config';
 import 'react-native-gesture-handler';
-import MainNavigation from './navigation/MainNavigation';
+import MainNavigation, {AuthNavigation} from './navigation/MainNavigation';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -27,7 +27,7 @@ function App(): React.JSX.Element {
   return (
     <Provider store={store}>
       <NavigationContainer>
-        <MainNavigation />
+        <AuthNavigation />
       </NavigationContainer>
     </Provider>
   );
